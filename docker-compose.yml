@@ -1,0 +1,10 @@
+services:
+  custom-nginx:
+    image: nareshvj04/custom-nginx:v1
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./my-data:/var/opt/nginx
+
+
